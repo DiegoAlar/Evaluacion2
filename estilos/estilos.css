@@ -1,0 +1,287 @@
+body{
+font-family: Dancing script;
+background-color: #02010a;
+margin: 0;
+padding: 0;
+
+
+}
+
+#contenido{
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+header {
+  background-color: #5b7989;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: background 1s;
+  animation: miAnimacion 1.5s;
+}
+
+@-webkit-keyframes miAnimacion{
+
+  0%{
+    margin-top: 150%;
+  }
+
+  60%{
+    margin-top: -5%;
+  }
+
+  100%{
+    margin-top: 0%;
+  }
+
+}
+
+
+#banner .titulo h1 a {
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  text-decoration: none;
+}
+
+.imagenesSecundarias a{
+  color: black;
+
+}
+
+.imagenCentral div img{
+  box-shadow: 2px 2px black;
+}
+
+
+.imagenesSecundarias div img{
+  box-shadow: 2px 2px black;
+}
+
+.contPaisajes div img{
+  box-shadow: 2px 2px black;
+}
+
+#banner {
+  border-radius: 10px 10px 0 0;
+}
+
+.menu ul {list-style: none;}
+/*.menu ul li {float:right;}*/
+.menu ul li {display: inline-block;}
+
+ .menu ul li {
+   padding: 10px 20px;
+ }
+
+ .menu a{
+   color: white;
+   text-align: left;
+   display: inline;
+
+ }
+
+ img{
+   width: 100%;
+ }
+
+.imagenCentral{
+  background-color: #82c3a6;
+  width: 100%;
+  padding: 20px 0;
+
+}
+
+.centro{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.imagenCentral img{
+  width: 100%;
+
+
+}
+.imagenesSecundarias {
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border: 1px;
+  padding: 20px 0;
+
+
+}
+
+.imagenesSecundarias img{
+  width: 70%;
+}
+
+.imag1{
+  width: 50%;
+}
+
+.imag2{
+  width: 50%;
+}
+
+.imag1 img{
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.imag1 img:hover{
+  transform: rotate(10deg);
+}
+
+.imag2 img{
+  transition-property: translate();
+  transition-duration: 1s;
+}
+
+.imag2 img:hover{
+  transform: translate(20px, -5px);
+}
+
+.p1 img {
+	filter: blur(10px);
+}
+
+.p2 img, .p4 img, .p6 img{
+  filter: grayscale(100%);
+}
+.p3 img{
+  filter: sepia(90%);
+}
+
+.redes img{
+  width: 10%;
+  text-align: center;
+}
+
+/*  seccion de animacion de rebotado */
+
+
+
+/* seccion de animacion de rebotado */
+
+.pie{
+  background-color: #C6d5c5;
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0 0 10px 10px;
+}
+
+.pie div {
+  padding: 0 20px;
+}
+
+.pie h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/*  esto hace parte de la pagina paisajes.html */
+.contPaisajes{
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.col1{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 20px 20px 5px 20px;
+}
+
+.p1 {
+  margin: 10px 10px 5px 10px;
+}
+
+.p2 {
+  margin: 10px 10px 5px 10px;
+}
+
+.p3 {
+  margin: 10px 10px 5px 10px;
+}
+
+
+.col2{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 5px 20px 20px 20px;
+}
+
+.p4 {
+  margin: 10px;
+}
+
+.p5 {
+  margin: 10px;
+}
+
+.p6 {
+  margin: 10px;
+}
+
+
+
+
+
+/*  esto hace parte de la pagina paisajes.html */
+
+@media (max-width: 900px){
+
+#contenido{
+  width: 100%
+}
+
+#banner{
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenesSecundarias{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.imag1{
+  width: 100%;
+  margin: 10px auto;
+}
+
+.imag2{
+  width: 100%;
+  margin: 10px auto;
+}
+
+.col1{
+  display: flex;
+  flex-direction: column;
+}
+
+.col2{
+  display: flex;
+  flex-direction: column;
+}
+
+.pie{
+  display: flex;
+  flex-direction: column;
+}
+
+.redes img{
+  width: 1em;
+}
